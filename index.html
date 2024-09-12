@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Counseling - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Career Counseling</h1>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="auth-forms">
+                <div class="form-container" id="login-container">
+                    <h2>Login</h2>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="login-username">Username:</label>
+                            <input type="text" id="login-username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password:</label>
+                            <input type="password" id="login-password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+                    <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+                </div>
+
+                <div class="form-container" id="signup-container" style="display: none;">
+                    <h2>Sign Up</h2>
+                    <form id="signup-form">
+                        <div class="form-group">
+                            <label for="signup-username">Username:</label>
+                            <input type="text" id="signup-username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-email">Email:</label>
+                            <input type="email" id="signup-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-password">Password:</label>
+                            <input type="password" id="signup-password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn">Sign Up</button>
+                    </form>
+                    <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Career Counseling. All rights reserved.</p>
+    </footer>
+
+    <script src="auth.js"></script>
+</body>
+</html>

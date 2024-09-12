@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Your Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Career Counselling</h1>
+        <nav class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <section id="input-form">
+            <h2>Enter Your Details</h2>
+            <form action="path.html" method="post">
+                <label for="qualification">Qualification:</label>
+                <select id="qualification" name="qualification" required>
+                    <option value="" disabled selected>Select your qualification</option>
+                    <option value="10th">10th Grade</option>
+                    <option value="12th">12th Grade</option>
+                    <option value="bachelor">Bachelor's Degree</option>
+                    <option value="master">Master's Degree</option>
+                </select>
+                
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" placeholder="e.g., Programming, Design" required>
+                
+                <label for="percentage">Percentage Scored:</label>
+                <input type="number" id="percentage" name="percentage" step="0.1" placeholder="Enter percentage" required>
+
+                <label for="interests">Interests:</label>
+                <textarea id="interests" name="interests" rows="4" placeholder="e.g., Technology, Science" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Career Counselling. All rights reserved.</p>
+    </footer>
+
+    <script src="input.js"></script>
+</body>
+</html>

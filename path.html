@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Counseling Path</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Career Counseling Path</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="stream-selection">
+            <h2>Select Your Stream</h2>
+            <div class="dropdown-section">
+                <select id="stream-dropdown">
+                    <option value="" disabled selected>Select a stream</option>
+                    <option value="science">Science: Physics, Chemistry, Biology/Mathematics</option>
+                    <option value="commerce">Commerce: Business Studies, Economics, Accountancy</option>
+                    <option value="arts">Arts: History, Political Science, Geography</option>
+                </select>
+            </div>
+            <button type="button" onclick="showCourseSelection()">Next</button>
+        </section>
+
+        <section id="course-selection" class="hidden">
+            <h2>Select Your Course</h2>
+            <div class="dropdown-section">
+                <select id="course-dropdown">
+                    <!-- Options will be populated based on selected stream -->
+                </select>
+            </div>
+            <button type="button" onclick="showCareerOptions()">Next</button>
+        </section>
+
+        <section id="career-options" class="hidden">
+            <h2>Select Your Career Path</h2>
+            <div class="dropdown-section">
+                <select id="career-dropdown">
+                    <!-- Options will be populated based on selected course -->
+                </select>
+            </div>
+            <button type="button" onclick="showGoal()">Finish</button>
+        </section>
+
+        <section id="goal" class="hidden">
+            <div class="goal-content">
+                <h2>GOAL</h2>
+                <p>Your success path is ready! You can save it or edit it.</p>
+                <button type="button" onclick="savePath()">Save Path</button>
+                <button type="button" onclick="editPath()">Edit Path</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Career Counselling. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

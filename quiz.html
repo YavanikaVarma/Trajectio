@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Career Counseling</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="quiz-section">
+            <h2>Career Quiz</h2>
+            <p>Take our interactive quiz to discover your strengths and find the best career paths for you.</p>
+            <form id="quiz-form">
+                <div class="quiz-question">
+                    <h3>Question 1: What subjects do you enjoy the most?</h3>
+                    <label><input type="radio" name="question1" value="Science"> Science</label>
+                    <label><input type="radio" name="question1" value="Math"> Math</label>
+                    <label><input type="radio" name="question1" value="Art"> Art</label>
+                    <label><input type="radio" name="question1" value="Literature"> Literature</label>
+                </div>
+                <div class="quiz-question">
+                    <h3>Question 2: What type of work environment do you prefer?</h3>
+                    <label><input type="radio" name="question2" value="Office"> Office</label>
+                    <label><input type="radio" name="question2" value="Outdoor"> Outdoor</label>
+                    <label><input type="radio" name="question2" value="Laboratory"> Laboratory</label>
+                    <label><input type="radio" name="question2" value="Studio"> Studio</label>
+                </div>
+                <div class="quiz-question">
+                    <h3>Question 3: What skills do you excel at?</h3>
+                    <label><input type="radio" name="question3" value="Problem-solving"> Problem-solving</label>
+                    <label><input type="radio" name="question3" value="Creativity"> Creativity</label>
+                    <label><input type="radio" name="question3" value="Communication"> Communication</label>
+                    <label><input type="radio" name="question3" value="Technical skills"> Technical skills</label>
+                </div>
+                <div class="quiz-question">
+                    <h3>Question 4: What kind of tasks do you enjoy?</h3>
+                    <label><input type="radio" name="question4" value="Analyzing data"> Analyzing data</label>
+                    <label><input type="radio" name="question4" value="Designing"> Designing</label>
+                    <label><input type="radio" name="question4" value="Helping others"> Helping others</label>
+                    <label><input type="radio" name="question4" value="Managing projects"> Managing projects</label>
+                </div>
+                <div class="quiz-question">
+                    <h3>Question 5: What is your preferred work style?</h3>
+                    <label><input type="radio" name="question5" value="Independent"> Independent</label>
+                    <label><input type="radio" name="question5" value="Team-oriented"> Team-oriented</label>
+                    <label><input type="radio" name="question5" value="Flexible"> Flexible</label>
+                    <label><input type="radio" name="question5" value="Structured"> Structured</label>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            <div id="results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Career Counseling. All rights reserved.</p>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
