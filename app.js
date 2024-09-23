@@ -171,3 +171,15 @@ document.getElementById('quiz-form').addEventListener('submit', function(event) 
 
     results.innerHTML = resultText;
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navbarMenu = document.querySelector('#navbar-menu');
+
+    navbarToggle.addEventListener('click', function() {
+        const isExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
+        navbarToggle.setAttribute('aria-expanded', !isExpanded);
+        navbarMenu.classList.toggle('show');
+    });
+});
+

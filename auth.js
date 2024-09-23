@@ -12,27 +12,23 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     }
 });
 
-document.getElementById('signup-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+    // This function will dynamically animate or change the styles
+    // if you need further customization or interaction.
+    const icons = document.querySelectorAll(".icon");
 
-    const username = document.getElementById('signup-username').value;
-    const email = document.getElementById('signup-email').value;
-    const password = document.getElementById('signup-password').value;
+    icons.forEach((icon, index) => {
+        icon.style.animationDuration = `${3 + index}s`;
+        icon.style.transition = "all 0.5s ease";
+    });
 
-    // Simple sign-up validation (for demonstration purposes)
-    if (username && email && password) {
-        window.location.href = 'home.html';
-    } else {
-        document.getElementById('signup-results').innerHTML = '<p>Please fill in all fields.</p>';
-    }
-});
-
-document.getElementById('show-signup').addEventListener('click', function() {
-    document.getElementById('login-container').style.display = 'none';
-    document.getElementById('signup-container').style.display = 'block';
-});
-
-document.getElementById('show-login').addEventListener('click', function() {
-    document.getElementById('signup-container').style.display = 'none';
-    document.getElementById('login-container').style.display = 'block';
+    // Hover interaction: Slight bounce effect
+    icons.forEach(icon => {
+        icon.addEventListener("mouseenter", () => {
+            icon.style.transform = "scale(1.2)";
+        });
+        icon.addEventListener("mouseleave", () => {
+            icon.style.transform = "scale(1)";
+        });
+    });
 });

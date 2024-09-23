@@ -3,62 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Counseling - Login</title>
+    <title>Advanced Design Login</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="592212713023-skcku5fjfva7fte1n9j5b9us4n0erous.apps.googleusercontent.com">
 </head>
-<body>
-    <header>
-        <h1>Career Counseling</h1>
-    </header>
+<body class="Body">
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Trajectio Logo" class="loginlogo">
+        </div>
+    </header> 
 
-    <main>
-        <section class="auth-section">
-            <div class="auth-forms">
-                <div class="form-container" id="login-container">
-                    <h2>Login</h2>
-                    <form id="login-form">
-                        <div class="form-group">
-                            <label for="login-username">Username:</label>
-                            <input type="text" id="login-username" name="username" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="login-password">Password:</label>
-                            <input type="password" id="login-password" name="password" required>
-                        </div>
-                        <button type="submit" class="btn">Login</button>
-                    </form>
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                    <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+    <div class="container">
+        <div class="icon-backgrounds">
+            <div class="icon" id="gear-icon"></div>
+            <div class="icon" id="lightbulb-icon"></div>
+            <div class="icon" id="clock-icon"></div>
+            <div class="icon" id="lock-icon"></div>
+            <div class="icon" id="eye-icon"></div>
+            <div class="icon" id="hand-icon"></div>
+            <div class="icon" id="compass-icon"></div>
+            <div class="icon" id="pen-icon"></div>
+        </div>
+
+        <!-- Main login box -->
+        <div class="login-box">
+            <h2 class="login-header">Login</h2>
+            <form>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" class="input-field">
                 </div>
-
-                <div class="form-container" id="signup-container" style="display: none;">
-                    <h2>Sign Up</h2>
-                    <form id="signup-form">
-                        <div class="form-group">
-                            <label for="signup-username">Username:</label>
-                            <input type="text" id="signup-username" name="username" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="signup-email">Email:</label>
-                            <input type="email" id="signup-email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="signup-password">Password:</label>
-                            <input type="password" id="signup-password" name="password" required>
-                        </div>
-                        <button type="submit" class="btn">Sign Up</button>
-                    </form>
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                    <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" class="input-field">
                 </div>
-            </div>
-        </section>
-    </main>
+                <button type="submit" class="login-button">Login</button>
+                <br>
+            </form>
 
-    <footer>
-        <p>© 2024 Career Counseling. All rights reserved.</p>
+            <p class="or"><br><hr OR><br></p>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 Trajectio. All rights reserved.</p>
     </footer>
 
     <script>
@@ -73,6 +60,7 @@
             console.log('ID Token: ' + id_token);
         }
     </script>
+
     <script src="auth.js"></script>
 </body>
 </html>

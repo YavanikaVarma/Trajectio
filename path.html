@@ -6,19 +6,26 @@
     <title>Career Counseling Path</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="path-body">
     <header>
-        <h1>Career Counseling Path</h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+        <div class="nav">
+            <ul class="nav-bar">
+                <li class="logo"><a href="home.html"><img src="logo.png" alt="Logo"></a></li>
+                <input type="checkbox" id="click">
+                <span class="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="index.html">Login</a></li>
+                    <label for="click" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="click" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
-        </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="path-main">
         <section id="stream-selection">
             <h2>Select Your Stream</h2>
             <div class="dropdown-section">
@@ -62,7 +69,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="path-footer">
         <p>© 2024 Career Counselling. All rights reserved.</p>
     </footer>
 
