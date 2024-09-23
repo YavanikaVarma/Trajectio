@@ -60,6 +60,7 @@
             // You can send the ID token to your backend for verification and authentication
             var id_token = googleUser.getAuthResponse().id_token;
             console.log('ID Token: ' + id_token);
+            window.location.href = 'home.html';
         }
     </script>
 
